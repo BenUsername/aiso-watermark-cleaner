@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Check, Clipboard, Copy, LoaderCircle, RotateCcw, ShieldCheck, Trash2 } from "lucide-react";
 import Link from "next/link";
+import { BASE_PATH } from "@/lib/site";
 
 type Stats = { inputLength: number; outputLength: number; removedCount: number; replacedCount: number };
 type StoredRecord = { id: string; deletionToken: string; expiresAt: string };
@@ -51,7 +52,7 @@ export default function CleanerWorkbench() {
     setMessage("");
     setCopied(false);
     try {
-      const response = await fetch("/api/clean", {
+      const response = await fetch(`${BASE_PATH}/api/clean`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, source, ownsContent, storageConsent, normalizeConfusables, nfkc }),
@@ -88,7 +89,7 @@ export default function CleanerWorkbench() {
     setStatus("deleting");
     try {
       const results = await Promise.all(records.map(async (record) => {
-        const response = await fetch(`/api/clean/${record.id}`, { method: "DELETE", headers: { "x-deletion-token": record.deletionToken } });
+        const response = await fetch(`${BASE_PATH}/api/clean/${record.id}`, { method: "DELETE", headers: { "x-deletion-token": record.deletionToken } });
         return { record, deleted: response.ok || response.status === 404 };
       }));
       const remaining = results.filter((result) => !result.deleted).map((result) => result.record);

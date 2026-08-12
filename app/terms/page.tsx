@@ -1,8 +1,13 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import type { Metadata } from "next";
+import Link from "next/link";
 
-export const metadata: Metadata = { title: "Terms of service | Aiso watermark cleaner", description: "Rules for using Aiso's free text watermark cleaner." };
+export const metadata: Metadata = {
+  title: "Terms of service | Aiso watermark cleaner",
+  description: "Rules for using Aiso's free text watermark cleaner.",
+  alternates: { canonical: "https://www.getaiso.com/tools/watermark-remover/terms" },
+};
 
 export default function TermsPage() {
   return (
@@ -23,7 +28,7 @@ export default function TermsPage() {
         <p>Do not use the service for academic fraud, impersonation, infringement, evasion of a legal disclosure duty, violation of a platform rule, or a false claim that AI-assisted work is human-written. Do not submit unlawful content, malware instructions intended to harm others, or data you are not allowed to share.</p>
 
         <h2>4. Storage</h2>
-        <p>Using the cleaning action requires agreement to the storage described in our <a href="/privacy">privacy policy</a>. Cleaning records are scheduled for automatic deletion after 30 days and may be deleted sooner with the deletion token returned to your browser.</p>
+        <p>Using the cleaning action requires agreement to the storage described in our <Link href="/privacy">privacy policy</Link>. Cleaning records are scheduled for automatic deletion after 30 days and may be deleted sooner with the deletion token returned to your browser.</p>
 
         <h2>5. Availability and limits</h2>
         <p>The service is provided as available and without a promise that it will be uninterrupted, error-free, or accepted by a particular detector or platform. Review the output before using it. Some Unicode cleaning options can change emoji sequences, complex-script joins, full-width text, or intentionally formatted characters.</p>

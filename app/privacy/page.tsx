@@ -2,7 +2,11 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Privacy policy | Aiso watermark cleaner", description: "How Aiso stores and deletes text submitted to the free watermark cleaner." };
+export const metadata: Metadata = {
+  title: "Privacy policy | Aiso watermark cleaner",
+  description: "How Aiso stores and deletes text submitted to the free watermark cleaner.",
+  alternates: { canonical: "https://www.getaiso.com/tools/watermark-remover/privacy" },
+};
 
 export default function PrivacyPage() {
   return (

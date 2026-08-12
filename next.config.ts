@@ -9,8 +9,17 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  basePath: "/tools/watermark-remover",
   poweredByHeader: false,
   experimental: { optimizePackageImports: ["lucide-react"] },
+  async redirects() {
+    return [{
+      source: "/",
+      destination: "https://www.getaiso.com/tools/watermark-remover",
+      permanent: false,
+      basePath: false,
+    }];
+  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },

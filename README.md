@@ -2,7 +2,7 @@
 
 A free, transparent web tool that removes invisible Unicode carriers and normalizes unusual spacing in text the user owns or is authorized to process.
 
-Live tool: [aiso-watermark-cleaner.vercel.app](https://aiso-watermark-cleaner.vercel.app)
+Live tool: [getaiso.com/tools/watermark-remover](https://www.getaiso.com/tools/watermark-remover)
 
 ## What it does
 
@@ -32,7 +32,7 @@ npm run build
 
 ## Deploy
 
-Deploy the repository to Vercel and configure `MONGODB_URI`, `MONGODB_DB`, and `NEXT_PUBLIC_SITE_URL` for Production and Preview. The application creates a 30-day TTL index on `expiresAt` in the `clean_records` collection.
+Deploy the repository to Vercel and configure `MONGODB_URI` and `MONGODB_DB` for Production and Preview. The application creates a 30-day TTL index on `expiresAt` in the `clean_records` collection. Its base path is `/tools/watermark-remover`, which lets getaiso.com proxy the complete app under the canonical Aiso tools URL.
 
 ## Privacy model
 
