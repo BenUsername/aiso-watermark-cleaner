@@ -13,6 +13,7 @@ export default function SiteHeader() {
         <span className="product-name">watermark cleaner</span>
       </Link>
       <nav aria-label="Primary navigation">
+        <a href="https://www.getaiso.com/tools">All tools</a>
         <Link href="/privacy">Privacy</Link>
         <a className="github-link" href="https://github.com/BenUsername/aiso-watermark-cleaner" target="_blank" rel="noreferrer">
           <GitFork aria-hidden="true" /> Source
