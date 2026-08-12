@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { cleanText } from "../lib/clean-text";
+import { cleanText, inspectText } from "../lib/clean-text";
 
 describe("cleanText", () => {
   it("removes zero-width, bidi, and tag characters", () => {
@@ -29,5 +29,21 @@ describe("cleanText", () => {
 
   it("supports optional NFKC normalization", () => {
     expect(cleanText("①", { nfkc: true }).cleanedText).toBe("1");
+  });
+
+  it("reports upstream-compatible kinds, labels, counts, and offsets", () => {
+    const report = inspectText(`a\u200Bb\u202Ec\u{E0041}`);
+    expect(report.suspiciousTotal).toBe(3);
+    expect(report.hits.map((hit) => hit.kind)).toEqual(expect.arrayContaining(["zwj_family", "bidi", "tag_chars"]));
+    expect(report.hits.find((hit) => hit.codepoint === "U+200B")).toMatchObject({
+      label: "U+200B ZERO WIDTH SPACE (Cf)",
+      count: 1,
+      sampleOffsets: [1],
+    });
+  });
+
+  it("flags confusables only in aggressive inspection", () => {
+    expect(inspectText("pаy").suspiciousTotal).toBe(0);
+    expect(inspectText("pаy", { aggressive: true }).hits[0]).toMatchObject({ kind: "confusable", codepoint: "U+0430" });
   });
 });

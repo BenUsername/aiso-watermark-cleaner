@@ -5,7 +5,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div>
         <strong>Watermark cleaner by Aiso</strong>
-        <p>For privacy and text hygiene on content you own.</p>
+        <p>A hosted web implementation of Guillaume Meyer&apos;s watermarks-remover.</p>
       </div>
       <nav aria-label="Legal navigation">
         <Link href="/privacy">Privacy</Link>

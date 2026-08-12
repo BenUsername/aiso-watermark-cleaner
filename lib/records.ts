@@ -5,11 +5,28 @@ import type { CleanStats, SourceLabel } from "@/lib/clean-text";
 
 export type CleanRecord = {
   _id?: ObjectId;
-  schemaVersion: 1;
-  inputText: string;
-  cleanedText: string;
+  schemaVersion: 1 | 2;
+  operation?: "text-clean" | "text-rewrite" | "file-clean";
+  inputText?: string;
+  cleanedText?: string;
   source: SourceLabel;
-  stats: CleanStats;
+  stats?: CleanStats;
+  rewrite?: {
+    strength: "paraphrase" | "backtranslate" | "structural";
+    backend: "openai-compatible" | "vercel-ai-gateway";
+    model: string;
+  };
+  file?: {
+    name: string;
+    outputName: string;
+    format: string;
+    mimeType: string;
+    bytesIn: number;
+    bytesOut: number;
+    findings: string[];
+    actions: string[];
+    residual: { hasC2pa: boolean; hasAiMetadata: boolean; suspiciousUnicode: number };
+  };
   consent: { ownsContent: true; storage: true; acceptedAt: Date };
   deletionTokenHash: string;
   createdAt: Date;

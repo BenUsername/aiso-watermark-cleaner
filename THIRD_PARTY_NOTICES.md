@@ -2,7 +2,7 @@
 
 ## watermarks-remover
 
-This project adapts the deterministic Unicode text-cleaning approach and codepoint coverage from [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover).
+This project implements the inspection-first workflow from [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover) as a hosted TypeScript web application. The adapted scope includes Unicode Layer A, Layer B rewrite prompts and model hook behavior, PNG/JPEG metadata cleaning, SVG/PDF/DOCX/ODT/HTML/Markdown container cleaning, post-clean inspection, and residual-risk language. The port was reviewed against upstream commit `545c38320163cb9825ef43271e6a5fe60397fa20`.
 
 MIT License
 

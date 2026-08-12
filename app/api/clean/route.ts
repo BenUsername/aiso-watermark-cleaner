@@ -40,7 +40,8 @@ export async function POST(request: Request) {
     const deletion = createDeletionToken();
     const collection = await recordsCollection<CleanRecord>();
     const inserted = await collection.insertOne({
-      schemaVersion: 1,
+      schemaVersion: 2,
+      operation: "text-clean",
       inputText: text,
       cleanedText: result.cleanedText,
       source,

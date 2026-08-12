@@ -2,7 +2,7 @@
   "name": "aiso-watermark-cleaner",
   "version": "1.0.0",
   "private": false,
-  "description": "A transparent, open-source cleaner for invisible Unicode and spacing marks in text you own.",
+  "description": "A hosted web implementation of watermarks-remover for Unicode, statistical text rewriting, and supported file metadata.",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,8 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "ai": "^7.0.64",
+    "fflate": "^0.8.2",
     "lucide-react": "1.31.0",
     "mongodb": "7.5.0",
     "next": "16.3.0",

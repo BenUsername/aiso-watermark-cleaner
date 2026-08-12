@@ -7,16 +7,16 @@ const splineSans = Spline_Sans({ subsets: ["latin"], display: "swap", variable: 
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.getaiso.com"),
-  title: "AI watermark cleaner | Free text hygiene tool by Aiso",
-  description: "Remove invisible Unicode marks and normalize unusual spacing in text you own. Free, transparent, and open source.",
+  title: "AI watermark remover | Free text and file cleanup by Aiso",
+  description: "Inspect and clean invisible Unicode, statistical text marks, C2PA, EXIF, XMP, and document metadata from content you own.",
   alternates: { canonical: CANONICAL_SITE_URL },
   openGraph: {
-    title: "Clean invisible AI marks from text you own",
-    description: "A free, transparent text hygiene tool by Aiso.",
+    title: "Clean AI provenance from text and files you own",
+    description: "A free web implementation of the open-source watermarks-remover workflow by Aiso.",
     type: "website",
     url: CANONICAL_SITE_URL,
   },
-  twitter: { card: "summary_large_image", title: "AI watermark cleaner", description: "Clean invisible Unicode marks and unusual spacing from text you own." },
+  twitter: { card: "summary_large_image", title: "AI watermark remover", description: "Inspect and clean supported text and file provenance channels." },
   robots: { index: true, follow: true },
 };
 
