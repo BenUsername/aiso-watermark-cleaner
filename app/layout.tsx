@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
 import { Spline_Sans } from "next/font/google";
-import { CANONICAL_SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const splineSans = Spline_Sans({ subsets: ["latin"], display: "swap", variable: "--font-spline" });
 
+const siteUrl = "https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.getaiso.com"),
-  title: "AI watermark remover | Free text and file cleanup by Aiso",
-  description: "Inspect and clean invisible Unicode, statistical text marks, C2PA, EXIF, XMP, and document metadata from content you own.",
-  alternates: { canonical: CANONICAL_SITE_URL },
+  metadataBase: new URL(siteUrl),
+  title: "More Than ChatGPT | Tel Aviv field notes",
+  description: "Specific, dated Tel Aviv field notes about Friday opening hours, cheap beer, bills, healthcare and local workarounds.",
+  alternates: { canonical: siteUrl },
   openGraph: {
-    title: "Clean AI provenance from text and files you own",
-    description: "A free web implementation of the open-source watermarks-remover workflow by Aiso.",
+    title: "More Than ChatGPT",
+    description: "The answer after the generic answer. Concrete Tel Aviv field notes with real prices, locations and dates.",
     type: "website",
-    url: CANONICAL_SITE_URL,
+    url: siteUrl,
+    images: ["/more-than-chatgpt-og.svg"],
   },
-  twitter: { card: "summary_large_image", title: "AI watermark remover", description: "Inspect and clean supported text and file provenance channels." },
+  twitter: {
+    card: "summary_large_image",
+    title: "More Than ChatGPT",
+    description: "Concrete Tel Aviv field notes that generic answers miss.",
+    images: ["/more-than-chatgpt-og.svg"],
+  },
   robots: { index: true, follow: true },
 };
 
