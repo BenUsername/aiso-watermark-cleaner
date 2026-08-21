@@ -1,6 +1,4 @@
-checked_at=2026-08-21T15:50:00Z
-url=https://aiso-watermark-cleaner-git-more-than-chatgpt-source-bts-projects-abf9912d.vercel.app
-status=000
-final_location=
-title=
-body_prefix=
+checked_at=2026-08-21T15:51:47Z
+url=https://api.vercel.com/v13/deployments/B7GoUj8vFkass2X1Fm8oeQkvyFEh
+status=403
+body={"error":{"code":"forbidden","message":"The request is missing an authentication token","missingToken":true}}
