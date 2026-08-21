@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/vercel-api-test.mjs && next build",
     "start": "next start",
     "test": "vitest run"
   },
