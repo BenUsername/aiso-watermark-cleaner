@@ -1,6 +1,6 @@
-checked_at=2026-08-21T15:46:46Z
-url=https://more-than-chatgpt-bts-projects-abf9912d.vercel.app
-status=200
-final_location=location: /login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fmore-than-chatgpt-bts-projects-abf9912d.vercel.app%252F%26nonce%3D0838398d2074b7adfa237d960825d6541d94c002e0fbb4c86b1e1ee853a085ab
-title=Login – Vercel
-body_prefix=<!DOCTYPE html><html data-dpl-id="dpl_9QDZApQ18P8bdKxuiSjqDEBk5bsZ" class="geist_mono_fe992356-module__VEU71W__className geistsans_d5a4f12f-module__pe9kdq__className geist_mono_fe992356-module__VEU71W__variable geistsans_d5a4f12f-module__pe9kdq__variable dash" lang="en-US"><head><meta charSet="utf-8
+checked_at=2026-08-21T15:50:00Z
+url=https://aiso-watermark-cleaner-git-more-than-chatgpt-source-bts-projects-abf9912d.vercel.app
+status=000
+final_location=
+title=
+body_prefix=
