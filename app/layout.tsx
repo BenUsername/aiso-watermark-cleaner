@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     description: "The answer after the generic answer. Concrete Tel Aviv field notes with real prices, locations and dates.",
     type: "website",
     url: siteUrl,
-    images: ["/more-than-chatgpt-og.svg"],
+    images: ["/more-than-chatgpt-og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "More Than ChatGPT",
     description: "Concrete Tel Aviv field notes that generic answers miss.",
-    images: ["/more-than-chatgpt-og.svg"],
+    images: ["/more-than-chatgpt-og.png"],
   },
   robots: { index: true, follow: true },
 };
