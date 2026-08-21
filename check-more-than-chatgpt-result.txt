@@ -1,6 +1,4 @@
-checked_at=2026-08-21T16:14:06Z
-url=https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app
+checked_at=2026-08-21T16:16:04Z
+url=https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app/vercel-api-test.txt
 status=200
-final_location=location: /more-than-chatgpt.html
-title=More Than ChatGPT | Tel Aviv field notes
-body_prefix=<!doctype html> <html lang="en"> <head>   <meta charset="utf-8">   <meta name="viewport" content="width=device-width,initial-scale=1">   <title>More Than ChatGPT | Tel Aviv field notes</title>   <meta name="description" content="Specific, dated Tel Aviv field notes about Friday opening hours, cheap beer, bills, healthcare and local workarounds that generic AI answers usually miss.">   <meta name="robots" content="index,follow,max-image-preview:large">   <meta name="theme-color" content="#f6f1e9"
+body=token_present=true|token_length=1142|project_id=prj_yrXR6B234IMGllz2zGIWlqVlMcXG|team_id=team_2gjyUAKLrMAyOIkqKhqXgmvk|status=403|body={"error":{"code":"forbidden","message":"Not authorized","invalidToken":true}}
