@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app/sitemap.xml
