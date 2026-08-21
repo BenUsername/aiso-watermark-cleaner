@@ -1,6 +1,6 @@
-checked_at=2026-08-21T16:05:49Z
+checked_at=2026-08-21T16:09:48Z
 url=https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app
 status=200
-final_location=
-title=AI watermark remover | Free text and file cleanup by Aiso
-body_prefix=<!DOCTYPE html><html data-dpl-id="dpl_3gbTHXMRqJY9WK3ewk5UHkdRpXhj" lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/immutable/media/d249839af5fc7f99-s.p.1-_gyt3payptp.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" imageSrcSet="/_next/image?url=%2Ftools%2Fwatermark-remover%2Faiso-feather.png&amp;w=32&amp;q=75&amp;dpl=dpl_3gbTHXMRqJY9WK3ewk5UHkdRpXhj 1x, /_next/ima
+final_location=location: /more-than-chatgpt.html
+title=More Than ChatGPT | Tel Aviv field notes
+body_prefix=<!doctype html> <html lang="en"> <head>   <meta charset="utf-8">   <meta name="viewport" content="width=device-width,initial-scale=1">   <title>More Than ChatGPT | Tel Aviv field notes</title>   <meta name="description" content="Specific, dated Tel Aviv field notes about Friday opening hours, cheap beer, bills, healthcare and local workarounds that generic AI answers usually miss.">   <meta name="robots" content="index,follow,max-image-preview:large">   <meta name="theme-color" content="#f6f1e9"
