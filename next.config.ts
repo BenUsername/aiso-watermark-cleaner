@@ -10,9 +10,6 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  async rewrites() {
-    return [{ source: "/", destination: "/more-than-chatgpt.html" }];
-  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
