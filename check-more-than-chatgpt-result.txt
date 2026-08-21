@@ -1,4 +1,4 @@
-checked_at=2026-08-21T15:53:55Z
+checked_at=2026-08-21T15:59:02Z
 url=https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app
 status=200
 final_location=location: https://www.getaiso.com/tools/watermark-remover
