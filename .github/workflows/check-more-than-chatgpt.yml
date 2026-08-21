@@ -17,17 +17,19 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: more-than-chatgpt-source
-      - name: Fetch Vercel deployment metadata
+      - name: Fetch public preview URL
         shell: bash
         run: |
           set +e
-          API_URL="https://api.vercel.com/v13/deployments/B7GoUj8vFkass2X1Fm8oeQkvyFEh"
-          curl --max-time 30 -sS -D /tmp/headers.txt -o /tmp/body.txt -w '%{http_code}' "$API_URL" > /tmp/status.txt
+          URL="https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app"
+          curl -L --max-time 30 -sS -D /tmp/headers.txt -o /tmp/body.txt -w '%{http_code}' "$URL" > /tmp/status.txt
           {
             echo "checked_at=$(date -u +%FT%TZ)"
-            echo "url=$API_URL"
+            echo "url=$URL"
             echo "status=$(cat /tmp/status.txt)"
-            echo "body=$(head -c 5000 /tmp/body.txt | tr '\n' ' ' | tr '\r' ' ')"
+            echo "final_location=$(grep -i '^location:' /tmp/headers.txt | tail -1 | tr -d '\r' || true)"
+            echo "title=$(grep -io '<title>[^<]*' /tmp/body.txt | head -1 | sed 's/<title>//I' || true)"
+            echo "body_prefix=$(head -c 500 /tmp/body.txt | tr '\n' ' ' | tr '\r' ' ')"
           } > check-more-than-chatgpt-result.txt
       - name: Commit result
         run: |
