@@ -19,19 +19,17 @@ jobs:
           ref: more-than-chatgpt-source
       - name: Wait for Vercel branch deployment
         run: sleep 75
-      - name: Fetch public preview URL
+      - name: Fetch Vercel API test output
         shell: bash
         run: |
           set +e
-          URL="https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app"
+          URL="https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app/vercel-api-test.txt"
           curl -L --max-time 30 -sS -D /tmp/headers.txt -o /tmp/body.txt -w '%{http_code}' "$URL" > /tmp/status.txt
           {
             echo "checked_at=$(date -u +%FT%TZ)"
             echo "url=$URL"
             echo "status=$(cat /tmp/status.txt)"
-            echo "final_location=$(grep -i '^location:' /tmp/headers.txt | tail -1 | tr -d '\r' || true)"
-            echo "title=$(grep -io '<title>[^<]*' /tmp/body.txt | head -1 | sed 's/<title>//I' || true)"
-            echo "body_prefix=$(head -c 500 /tmp/body.txt | tr '\n' ' ' | tr '\r' ' ')"
+            echo "body=$(head -c 5000 /tmp/body.txt | tr '\n' '|' | tr '\r' ' ')"
           } > check-more-than-chatgpt-result.txt
       - name: Commit result
         run: |
