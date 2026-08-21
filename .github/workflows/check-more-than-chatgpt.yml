@@ -21,7 +21,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          URL="https://more-than-chatgpt-bts-projects-abf9912d.vercel.app"
+          URL="https://aiso-watermark-cleaner-git-more-than-chatgpt-source-bts-projects-abf9912d.vercel.app"
           curl -L --max-time 30 -sS -D /tmp/headers.txt -o /tmp/body.txt -w '%{http_code}' "$URL" > /tmp/status.txt
           {
             echo "checked_at=$(date -u +%FT%TZ)"
