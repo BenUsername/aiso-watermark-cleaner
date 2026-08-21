@@ -1,6 +1,6 @@
-checked_at=2026-08-21T15:59:55Z
+checked_at=2026-08-21T16:00:32Z
 url=https://aiso-watermark-cleaner-git-more-th-4f477a-bts-projects-abf9912d.vercel.app
 status=200
-final_location=location: https://www.getaiso.com/tools/watermark-remover
+final_location=
 title=AI watermark remover | Free text and file cleanup by Aiso
-body_prefix=<!DOCTYPE html><html data-dpl-id="dpl_4cjJfcbR3qA87TR2HvscuPu2Dc7r" lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/tools/watermark-remover/_next/static/immutable/media/d249839af5fc7f99-s.p.1-_gyt3payptp.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" imageSrcSet="/tools/watermark-remover/_next/image?url=%2Ftools%2Fwatermark-remover%2Faiso-feather.png&amp;w=32&amp;q=75&amp;dpl
+body_prefix=<!DOCTYPE html><html data-dpl-id="dpl_8uZ7gj5uLkcjvQHZXVFNtgSVLp6P" lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/immutable/media/d249839af5fc7f99-s.p.1-_gyt3payptp.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" imageSrcSet="/_next/image?url=%2Ftools%2Fwatermark-remover%2Faiso-feather.png&amp;w=32&amp;q=75&amp;dpl=dpl_8uZ7gj5uLkcjvQHZXVFNtgSVLp6P 1x, /_next/ima
